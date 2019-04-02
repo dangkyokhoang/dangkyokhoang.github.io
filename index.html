@@ -3,18 +3,26 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="refresh" content="5; url=https://github.com/dangkyokhoang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hoang — @dangkyokhoang on GitHub</title>
+    <link rel="icon" href="spinner.png">
     <style>
         body {
-            margin: 1em;
             font-family: monospace;
+            margin: 1.5em;
+            background-color: #222;
             color: #666;
+            letter-spacing: 0.0125em;
+            animation: darken 4s ease-in;
         }
 
-        /*noinspection CssUnusedSymbol*/
-        .dark {
-            background-color: #000;
-            transition: background-color 4s ease-in;
+        @keyframes darken {
+            from {
+                background-color: initial;
+            }
+            to {
+                background-color: #222;
+            }
         }
 
         p {
@@ -29,20 +37,26 @@
     </style>
 </head>
 <body>
-<p id="message">
-    Redirecting to <a href="https://github.com/dangkyokhoang">github.com/dangkyokhoang</a> . . .
-</p>
-<script>
-    document.body.classList.add('dark');
+    <p id="message">
+        Redirecting to <a href="https://github.com/dangkyokhoang">github.com/dangkyokhoang</a> . . .
+    </p>
+    <script>
+        (async () => {
+            const message = document.getElementById('message');
 
-    let count = 0;
-    const message = document.getElementById('message');
-    const int = setInterval(() => {
-        message.appendChild(document.createTextNode(' .'));
-        if (++count === 6) {
-            clearInterval(int);
-        }
-    }, 1000);
-</script>
+            for (let i = 0; i < 6; i++) {
+                // We all sleep (￣ρ￣)..zzZZ
+                // So does this program
+                await new Promise(resolve => setTimeout(resolve, 1000));
+
+                // A dot but not a dot ┐(￣ヘ￣;)┌
+                const dot = document.createTextNode(' .');
+                message.appendChild(dot);
+            }
+
+            // Just in case the browser didn't redirect automatically
+            location.href = 'https://github.com/dangkyokhoang';
+        })();
+    </script>
 </body>
 </html>
