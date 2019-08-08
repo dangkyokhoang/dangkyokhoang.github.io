@@ -1,0 +1,22 @@
+body {
+    font-family: monospace;
+    margin: 0 auto;
+    padding: 1.5em;
+    color: #444;
+    letter-spacing: 0.0125em;
+    line-height: 1.25;
+    max-width: 600px;
+}
+
+section {
+    margin: 2em 0;
+}
+
+li {
+    margin: 0.5em 0;
+}
+
+a {
+    color: darkcyan;
+    text-decoration: none;
+}

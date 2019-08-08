@@ -5,58 +5,16 @@
     <meta http-equiv="refresh" content="5; url=https://github.com/dangkyokhoang">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hoang — @dangkyokhoang on GitHub</title>
-    <link rel="icon" href="spinner.png">
+    <link rel="icon" href="/images/ellipsis.gif">
+    <link rel="stylesheet" href="/css/standard.css">
     <style>
         body {
-            font-family: monospace;
-            margin: 1.5em;
-            background-color: #222;
-            color: #666;
-            letter-spacing: 0.0125em;
-            animation: darken 4s ease-in;
-        }
-
-        @keyframes darken {
-            from {
-                background-color: initial;
-            }
-            to {
-                background-color: #222;
-            }
-        }
-
-        p {
-            overflow-x: hidden;
-            white-space: nowrap;
-        }
-
-        a {
-            color: darkcyan;
-            text-decoration: none;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <p id="message">
-        Redirecting to <a href="https://github.com/dangkyokhoang">github.com/dangkyokhoang</a> . . .
-    </p>
-    <script>
-        (async () => {
-            const message = document.getElementById('message');
-
-            for (let i = 0; i < 6; i++) {
-                // We all sleep (￣ρ￣)..zzZZ
-                // So does this program
-                await new Promise(resolve => setTimeout(resolve, 1000));
-
-                // A dot but not a dot ┐(￣ヘ￣;)┌
-                const dot = document.createTextNode(' .');
-                message.appendChild(dot);
-            }
-
-            // Just in case the browser didn't redirect automatically
-            location.href = 'https://github.com/dangkyokhoang';
-        })();
-    </script>
+    <p><img src="/images/ellipsis.gif"></p>
+    <p>Redirecting to <a href="https://github.com/dangkyokhoang">github.com/dangkyokhoang</a></p>
 </body>
 </html>
