@@ -1,15 +1,15 @@
 body {
     font-family: monospace;
+    max-width: 600px;
     margin: 0 auto;
     padding: 1.5em;
-    color: #444;
+    color: #333;
     letter-spacing: 0.0125em;
-    line-height: 1.25;
-    max-width: 600px;
+    line-height: 1.5;
 }
 
 section {
-    margin: 2em 0;
+    margin: 1.5em 0;
 }
 
 li {
@@ -19,4 +19,9 @@ li {
 a {
     color: darkcyan;
     text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: darkorange;
 }
